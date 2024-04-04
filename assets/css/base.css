@@ -3,9 +3,18 @@
 }
 
 :root {
-  --primary-color: #10375c;
-  --heading-color: #0d1111;
-  --desc-color: #767e7e;
+  /* Fonts */
+  --header-font: "Public Sans";
+  --main-font: "Poppins";
+  --font-sonsie-one: "Sonsie One";
+
+  /* Colors */
+  --primary-color-black: #152427;
+  --primary-color-black-green: #143c3c;
+  --text-color-light-gray: #7d8188;
+  --text-color-black-gray: #575d5e;
+  --secondary-color-gray: #6a8383;
+  --secondary-color-light-green: #e2eddf;
 }
 
 html {
@@ -20,4 +29,26 @@ body {
 body {
   font-size: 1.6rem;
   font-family: "Sora", sans-serif;
+}
+
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+.primary__button {
+  width: 173px;
+  height: 57px;
+  border-radius: 40px;
+  border: 1.5px solid #143c3c;
+  background: var(--Primary-color-black-green, #143c3c);
+  color: #fff;
+  text-align: center;
+
+  font-family: "Public Sans";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 155.556%; /* 155.556% */
 }

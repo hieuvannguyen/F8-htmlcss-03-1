@@ -11,9 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Public Sans:wght@400;500;600;800&display=swap" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" />
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Public+Sans:wght@400;500;600;800&display=swap" />
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Sonsie One:wght@400&display=swap" />
 
@@ -24,9 +22,98 @@
 </head>
 
 <body>
-  <section class="header">
-    <div class="container"></div>
+  <header class="header">
+    <div class="container">
+      <section class="header__top">
+        <!-- Logo brand -->
+        <a href="/" class="header__logo-brand">
+          <img class="header__logo" alt="" src="./assets/img/logo.svg" />
+          <img class="header__brand" alt="" src="./assets/img/modulars.svg" />
+        </a>
+        <!-- Navbar -->
+        <div class="header__navbar">
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item header__nav-item--active">
+                <a href="#!" class="header__nav-link">Home</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#!" class="header__nav-link">About</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#!" class="header__nav-link">Blogs</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#!" class="header__nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="primary__button">Sign Up</button>
+        </div>
+      </section>
+      <!-- Line active -->
+      <div class="header__line">
+        <div class="header__line--active"></div>
+      </div>
+      <!-- Hero -->
+      <section class="header__hero">
+        <div class="header__hero-content">
+          <h1 class="header__hero--title">We're a creative design agency.</h1>
+          <p class="header__hero-desc">A brilliant, modular agency template for startup's build
+            yours toady.</p>
+          <div class="header__hero-cta">
+            <button class="primary__button">Get in touch</button>
+            <button class="header__hero-play-video-button">
+              <img src="./assets/img/play-button.svg" alt="" class="hero-play-video-button__icon">
+              <p class="hero-play-video-button__text">Watch Video</p>
+            </button>
+          </div>
+        </div>
+        <div class="header__hero-image">
+          <div class="header__hero-image-inner"></div>
+          <figure class="header__hero-image-list">
+            <img src="./assets/img/hero-img1.png" alt="" class="header__hero-image-item">
+            <img src="./assets/img/hero-img2.png" alt="" class="header__hero-image-item">
+            <img src="./assets/img/hero-img3.png" alt="" class="header__hero-image-item">
+          </figure>
+          <img src="./assets/img/vector.svg" alt="" class="hero-image__vector1">
+          <img src="./assets/img/flower.png" alt="" class="hero-image__flower1">
+          <img src="./assets/img/vector.svg" alt="" class="hero-image__vector2">
+          <img src="./assets/img/flower.png" alt="" class="hero-image__flower2">
+        </div>
+      </section>
+    </div>
+  </header>
+  <!-- Brand list -->
+  <section class="brand">
+    <div class="container">
+      <div class="brand__logo-list">
+        <div class="brand__logo-item">
+          <h2 class="brand__name" style="font-weight: 500; font-size: 3.1rem;">Google</h2>
+        </div>
+        <div class="brand__logo-item">
+          <img src="./assets/img/slack.png" style="height: 46px;" alt="slack" class="brand__logo">
+          <h2 class="brand__name" style="font-size: 3.2rem; font-weight: 600;">slack</h2>
+        </div>
+        <div class="brand__logo-item">
+          <img src="./assets/img/discord.png" alt="discord" class="brand__logo">
+          <h2 class="brand__name" style="font-weight: 400; font-size: 2.6rem;">Agworld</h2>
+        </div>
+        <div class="brand__logo-item">
+          <h2 class="brand__name"
+            style="font-family: var(--font-sonsie-one); font-size: 2.3rem; font-weight: 400;">
+            RioTino</h2>
+        </div>
+        <div class="brand__logo-item">
+          <img src="./assets/img/heroku.png" alt="heroku" class="brand__logo">
+          <h2 class="brand__name" style="font-size: 1.9rem; font-weight: 600;letter-spacing: 1.995px;">HEROKU</h2>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <!--  -->
+
 </body>
 
 </html>

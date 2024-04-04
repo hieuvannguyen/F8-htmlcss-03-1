@@ -1,0 +1,214 @@
+.header {
+  font-family: var(--header-font);
+  max-width: 100%;
+  margin-top: 28px;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo-brand {
+  display: flex;
+  gap: 12px;
+}
+.header__logo {
+}
+.header__brand {
+  /* height: 14.5px; */
+}
+.header__navbar {
+  display: flex;
+  gap: 88px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.header__nav-list {
+  display: flex;
+  gap: 38px;
+}
+
+.header__nav-item {
+  padding: 5px 0;
+}
+.header__nav-link {
+  font-family: inherit;
+  color: var(--text-color-black-gray, #575d5e);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 155.556%; /* */
+}
+
+.header__line {
+  position: relative;
+  margin-top: 13px;
+  width: 1170px;
+  height: 1px;
+  background: linear-gradient(90deg, #fff 0%, #dddcdc 51.09%, rgba(212, 212, 212, 0) 99.68%);
+}
+.header__line--active {
+  position: absolute;
+  top: -1px;
+  left: 580px;
+  background-color: var(--primary-color-black-green);
+  width: 16px;
+  height: 2px;
+  z-index: 1;
+}
+
+/* Hero */
+
+.header__hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 76px;
+  margin-top: 60px;
+  margin-bottom: 130px;
+}
+.header__hero-content {
+  font-family: var(--header-font);
+}
+.header__hero--title {
+  font-family: inherit;
+  width: 368px;
+  color: var(--primary-color-black, #152427);
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 120%; /* 120% */
+}
+.header__hero-desc {
+  width: 341px;
+  margin-top: 20px;
+  color: var(--text-color-black-gray, #575d5e);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 155.556%; /* */
+}
+.header__hero-cta {
+  margin-top: 42px;
+  display: flex;
+  gap: 43px;
+}
+.header__hero-play-video-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  gap: 15px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.header__hero-play-video-button::before {
+  position: absolute;
+  content: "";
+  left: -7px;
+  bottom: 0px;
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  border: 4px solid var(--primary-color-black);
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  transform: rotate(-45deg);
+}
+.hero-play-video-button__text {
+  color: var(--primary-color-black, #152427);
+  text-align: left;
+  font-family: var(--main-font);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 166.667%; /* 166.667% */
+}
+.header__hero-image {
+  position: relative;
+}
+.header__hero-image-inner {
+  position: absolute;
+  top: 122px;
+  left: 156px;
+  border-radius: 50%;
+  background-color: #4dbb9a;
+  filter: blur(274px);
+  width: 340px;
+  height: 340px;
+  z-index: -1;
+}
+.header__hero-image-list {
+  display: flex;
+  gap: 20px;
+}
+.header__hero-image-item {
+  width: 202px;
+  height: 466px;
+  object-fit: cover;
+  border-radius: 110px;
+}
+
+.header__hero-image-item:nth-child(2) {
+  margin-top: 77px;
+}
+.hero-image__vector1,
+.hero-image__flower1,
+.hero-image__vector2,
+.hero-image__flower2 {
+  position: absolute;
+}
+
+.hero-image__flower1,
+.hero-image__flower2 {
+  height: 72px;
+}
+.hero-image__vector1,
+.hero-image__vector2 {
+  width: 545px;
+}
+.hero-image__vector1 {
+  top: -32px;
+  left: -174px;
+}
+.hero-image__flower1 {
+  top: -20px;
+  left: -210px;
+  transform: rotate(9.392deg);
+}
+.hero-image__vector2 {
+  transform: rotate(175.95deg);
+  bottom: -65px;
+  right: 55px;
+}
+.hero-image__flower2 {
+  bottom: -35px;
+  right: 10px;
+  transform: rotate(-174.659deg);
+}
+
+/* Logo list */
+.brand {
+}
+.brand__logo-list {
+  height: 200px;
+  display: flex;
+  gap: 64px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background-color: var(--secondary-color-light-green, #e2eddf);
+}
+.brand__logo-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.brand__name {
+  font-family: var(--main-font);
+  color: var(--primary-color-black-green);
+  font-weight: 600;
+}
+.brand__logo {
+  height: 30px;
+}
