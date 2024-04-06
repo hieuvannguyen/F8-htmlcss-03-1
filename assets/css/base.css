@@ -42,7 +42,7 @@ body {
   height: 57px;
   border-radius: 40px;
   border: 1.5px solid #143c3c;
-  background: var(--Primary-color-black-green, #143c3c);
+  background: var(--primary-color-black-green, #143c3c);
   color: #fff;
   text-align: center;
 
@@ -51,4 +51,49 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 155.556%; /* 155.556% */
+}
+
+.name-top-page {
+  display: flex;
+  gap: 21px;
+  align-items: center;
+}
+.line-before-name {
+  border: 1px solid var(--primary-color-black-green);
+  width: 25px;
+}
+.name-page {
+  font-family: var(--main-font);
+  text-transform: uppercase;
+  color: var(--primary-color-black, #152427);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 162.5%; /* 162.5% */
+}
+
+.title-section {
+  position: relative;
+  width: 520px;
+  color: var(--primary-color-black);
+  font-family: var(--main-font);
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 123.81%;
+}
+.title-section::after {
+  content: var(--content);
+  position: absolute;
+  bottom: 19px;
+  right: var(--right);
+  border: 2px solid var(--primary-color-black-green);
+  width: 66px;
+}
+
+@keyframes loading {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 40%;
+  }
 }
