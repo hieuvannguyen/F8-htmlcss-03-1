@@ -97,3 +97,13 @@ body {
     width: 40%;
   }
 }
+
+@keyframes submit {
+  from {
+    padding: 0 13px;
+  }
+  to {
+    padding-left: 26px;
+    padding-right: 0;
+  }
+}
